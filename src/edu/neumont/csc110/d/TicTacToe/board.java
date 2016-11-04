@@ -1,7 +1,7 @@
 package edu.neumont.csc110.d.TicTacToe;
 
 public class board {
-	private square s = new square();
+//	private square s = new square();
 	
 	public static void printBoard(){
 		
