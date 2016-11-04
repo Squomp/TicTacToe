@@ -1,17 +1,21 @@
 package edu.neumont.csc110.d.TicTacToe;
 
 public class board {
-//	private square s = new square();
 	
-	public static void printBoard(){
+	public void printBoard(square s){
 		
-		System.out.println(" 1 | 2 | 3 ");
+		System.out.println(" " + s.pieces[0] + " | " + s.pieces[1] + " | " + s.pieces[2] + " ");
 		System.out.println("-----------");
-		System.out.println(" 4 | 5 | 6 ");
+		System.out.println(" " + s.pieces[3] + " | " + s.pieces[4] + " | " + s.pieces[5] + " ");
 		System.out.println("-----------");
-		System.out.println(" 7 | 8 | 9 ");
+		System.out.println(" " + s.pieces[6] + " | " + s.pieces[7] + " | " + s.pieces[8] + " \n");
 		
 		
+	}
+	
+	public boolean check4Win(square box){
+		
+		return true;
 	}
 	
 }
