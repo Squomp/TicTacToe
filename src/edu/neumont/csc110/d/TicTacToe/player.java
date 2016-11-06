@@ -1,9 +1,13 @@
 package edu.neumont.csc110.d.TicTacToe;
 
+import java.io.IOException;
+
+import edu.neumont.csc110.d.utils.ConsoleUI;
+
 public class player {
 	public int playerNumber;
 	
-	public int getChoice(square s){
+	public int getChoice(square s) throws IOException{
 		int input;
 		while(true){
 			input = ConsoleUI.promptForInt("Please enter a number between 1 and 9: ", 1, 9);
