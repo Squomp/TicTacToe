@@ -74,9 +74,12 @@ public class board {
 		//Stalemate
 		boolean stalemate = false;
 		int index = 0;
-		while(index <= 9){
+		while(index < 9){
 			if(win == false && (box.pieces[index] == 'X' || box.pieces[index] == 'O')){
 				index++;
+			}
+			else {
+				break;
 			}
 		}
 		if(index == 9){
