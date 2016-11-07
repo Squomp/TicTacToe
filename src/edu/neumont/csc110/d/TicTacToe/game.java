@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class game {
 
-	public static void main(String[] args) throws IOException {
+	public void run() throws IOException {
 		board b = new board();
 		//square s = new square();
 		player p = new player();
@@ -14,9 +14,6 @@ public class game {
 		p.playerNumber = 1;
 		p2.playerNumber = 2;
 
-//		
-//		
-//		
 		boolean playGame = true;
 		while (playGame) {
 			System.out.println("Welcome to Tic-Tac-Toe!");
