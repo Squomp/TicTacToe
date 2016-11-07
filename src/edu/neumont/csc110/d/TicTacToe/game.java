@@ -2,7 +2,7 @@ package edu.neumont.csc110.d.TicTacToe;
 
 import java.io.IOException;
 
-import edu.neumont.csc110.d.utils.ConsoleUI;
+//import edu.neumont.csc110.d.utils.ConsoleUI;
 
 public class game {
 
@@ -32,11 +32,10 @@ public class game {
 					s.placeMarker(p, p1C);
 					b.printBoard(s);
 					win = b.check4Win(s);
-					if (win) {
-						break;
+					if (!win) {
+						int p2C = p.getChoice(s, p2.playerNumber);
+						s.placeMarker(p2, p2C);
 					}
-					int p2C = p.getChoice(s, p2.playerNumber);
-					s.placeMarker(p2, p2C);
 					b.printBoard(s);
 					win = b.check4Win(s);
 				}

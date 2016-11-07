@@ -72,7 +72,7 @@ public class board {
 			win = false;
 		}
 		//Stalemate
-		boolean stalemate = false;
+		//boolean stalemate = false;
 		int index = 0;
 		while(index < 9){
 			if(win == false && (box.pieces[index] == 'X' || box.pieces[index] == 'O')){
@@ -84,6 +84,7 @@ public class board {
 		}
 		if(index == 9){
 			System.out.println("Stalemate!");
+			gameOver = true;
 		}
 		
 			

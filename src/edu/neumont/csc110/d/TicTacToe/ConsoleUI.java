@@ -80,7 +80,7 @@ public class ConsoleUI {
 			}
 			else if(withQuit == true){
 				if(a == 0) {
-					System.out.println("\'0\': Exit"); 
+					System.out.println("0: Exit"); 
 				}
 				System.out.println("" + (a + 1) + ": " + options[a]);
 			}

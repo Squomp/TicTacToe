@@ -2,7 +2,7 @@ package edu.neumont.csc110.d.TicTacToe;
 
 import java.io.IOException;
 
-import edu.neumont.csc110.d.utils.ConsoleUI;
+//import edu.neumont.csc110.d.utils.ConsoleUI;
 
 public class player {
 	public int playerNumber;
