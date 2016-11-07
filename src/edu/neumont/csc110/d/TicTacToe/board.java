@@ -17,27 +17,35 @@ public class board {
 		boolean gameOver = true;
 		boolean win = true;
 		//X win conditions
+		//top row
 		if(box.pieces[0] == 'X' && box.pieces[1] == 'X' && box.pieces[2] == 'X'){
 			System.out.println("Player 1 wins!");
 		}
+		//middle row
 		else if(box.pieces[3] == 'X' && box.pieces[4] == 'X' && box.pieces[5] == 'X'){
 			System.out.println("Player 1 wins!");
 		}
+		//bottom row
 		else if(box.pieces[6] == 'X' && box.pieces[7] == 'X' && box.pieces[8] == 'X'){
 			System.out.println("Player 1 wins!");
 		}
+		//left column
 		else if(box.pieces[0] == 'X' && box.pieces[3] == 'X' && box.pieces[6] == 'X'){
 			System.out.println("Player 1 wins!");
 		}
+		//middle column
 		else if(box.pieces[1] == 'X' && box.pieces[4] == 'X' && box.pieces[7] == 'X'){
 			System.out.println("Player 1 wins!");
 		}
+		//right column
 		else if(box.pieces[2] == 'X' && box.pieces[5] == 'X' && box.pieces[8] == 'X'){
 			System.out.println("Player 1 wins!");
 		}
+		//left-right diagonal
 		else if(box.pieces[0] == 'X' && box.pieces[4] == 'X' && box.pieces[8] == 'X'){
 			System.out.println("Player 1 wins!");
 		}
+		//right-left diagonal
 		else if(box.pieces[2] == 'X' && box.pieces[4] == 'X' && box.pieces[6] == 'X'){
 			System.out.println("Player 1 wins!");
 		}
