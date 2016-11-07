@@ -16,6 +16,7 @@ public class game {
 
 		boolean playGame = true;
 		while (playGame) {
+			
 			System.out.println("Welcome to Tic-Tac-Toe!");
 			String[] options = { "New Game" };
 			int newGame = ConsoleUI.promptForMenuSelection(options, true);
