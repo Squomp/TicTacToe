@@ -10,7 +10,6 @@ public class board {
 		System.out.println("-----------");
 		System.out.println(" " + s.pieces[6] + " | " + s.pieces[7] + " | " + s.pieces[8] + " \n");
 		
-		
 	}
 	
 	public boolean check4Win(square box){

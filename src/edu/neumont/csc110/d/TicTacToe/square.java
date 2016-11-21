@@ -5,7 +5,8 @@ public class square {
 	
 	public void placeMarker(player p, int choice){
 		if(p.playerNumber == 1) pieces[choice] = 'X';
-		else pieces[choice] = 'O';
+		else if (p.playerNumber == 2) pieces[choice] = 'O';
+		else System.out.println("You can only have 2 players");
 	}
 
 }
